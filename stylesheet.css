@@ -1,0 +1,295 @@
+* {
+    font-family:sans-serif;
+}
+
+body {
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+    color:#00d4ff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+span {
+    font-weight: 700;
+}
+
+/*HERO*/
+
+
+div.hero-container {
+    display:flex;
+    height:95vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media (max-width:480px) {
+    div.hero-container {
+        display:inline-block;
+        width:100%;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+    }
+    img.hero-mice {
+        display:flex;
+        height:300px;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    div.hero-container {
+        display:inline-block;
+        width:100%;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+    }
+    img.hero-mice {
+        display:flex;
+        height:auto;
+        width:100%;
+    }
+}
+
+
+/*ABOUT ME*/
+
+section.about-me {
+    padding:50px;
+    padding-bottom:75px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%);
+    color:white;
+}
+
+div.about-me-container {
+    display:flex;
+    gap:20px;
+    justify-content:space-around;
+    align-items:normal;
+}
+
+img.profile-picture {
+    border-radius: 50%;
+    height:250px;
+}
+
+h3 {
+    font-size:1.5rem;
+}
+
+.about-me h3 {
+    color:white;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+}
+
+li {
+    line-height: 1.5rem;
+    font-weight: 100;
+}
+
+@media (max-width:480px) {
+    section.about-me {
+        padding:10px;
+        padding-top:20px;
+        padding-bottom:20px;
+        width:100%;
+        display:inline-block;
+        height:95vh;
+    }
+
+    div.about-me-container {
+        display:block;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+    }
+
+    img.profile-picture {
+        padding-left:20%;
+        height:150px;
+    }
+}
+
+/*MY SKILLS*/
+section.my-skills {
+    padding:50px;
+    padding-bottom:75px;
+}
+
+section.my-skills > h2 {
+    color:#090979;
+}
+
+div.my-skills-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.skill-card {
+    width:30%;
+}
+
+div.skill-card > p {
+    text-align: justify;
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+
+@media (max-width:480px) {
+    section.my-skills {
+        padding:10px;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+
+    div.my-skills-container {
+        display:block;
+        justify-content:center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    div.skill-card {
+        width:100%;
+    }
+}
+
+/*MY INTERESTS*/
+section.my-interests {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%);
+    color:white;
+    padding:50px;
+}
+div.my-interests-container {
+    display:flex;
+    flex:1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.my-interests h3 {
+    color:white;
+}
+
+div.interests-card {
+    width:30%;
+    height:auto;
+}
+
+div.interests-card > p {
+    font-size:0.9rem;
+    width:fit-content;
+    text-align: justify;
+}
+
+img.interests-image {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+@media (max-width:480px) {
+    section.my-interests {
+        padding:10px;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    div.my-interests-container {
+        display:block;
+        flex:1;
+        justify-content:center;
+        align-items: center;
+    }
+    div.interests-card {
+        width:100%;
+        height:auto;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    section.my-interests {
+        padding:10px;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    div.my-interests-container {
+        display:block;
+        flex:1;
+        justify-content:center;
+        align-items: center;
+    }
+    div.interests-card {
+        width:100%;
+        height:auto;
+    }
+
+    img.interests-image {
+        width:100%;
+        height:300px;
+        object-fit:cover;
+}
+}
+
+/*CONTACT ME*/
+section.contact-me {
+    padding:50px;
+}
+
+section.contact-me > h2 {
+    color:#090979;
+}
+
+div.contact-container {
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+a:link {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00d4ff;
+}
+
+/*FOOTER*/
+section.footer {
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:30px;
+    padding-right:30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 33%, rgba(0,212,255,1) 100%);
+    color:white;
+    display:flex;
+    justify-content: center;
+}
+
+.footer > p {
+    font-size:0.7rem;
+    text-align:center;
+}
